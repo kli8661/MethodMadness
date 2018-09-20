@@ -23,11 +23,11 @@ public class TestFile {
         //Testing range for sumUpTo
         println(sumUpTo(10));
 
-        //Testing if range is negative
-        println(sumUpTo(-10));
-
         //Testing multiplication table
         multiplicationTable(2,10);
+
+        //Testing Quadratic
+        quadSolver(2,-10,2);
     }
 
 }

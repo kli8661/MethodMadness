@@ -8,8 +8,19 @@ public class KLiLib {
     {
         System.out.println(str);
     }
+    public static void println(boolean str)
+    {
+        System.out.println(str);
+    }
+    public static void println(int str) { System.out.println(str); }
+    public static void println(double str) { System.out.println(str); }
 
-    public static String isPalindrome(String str)
+    /**
+     *
+     * @param str
+     * @return
+     */
+    public static boolean isPalindrome(String str)
     {
         String reversedStr = "";
         for(int i = str.length(); i > 0; i--)
@@ -19,14 +30,19 @@ public class KLiLib {
         }
         if(reversedStr.equalsIgnoreCase(str))
         {
-            return "true";
+            return true;
         }
         else
         {
-            return "false";
+            return false;
         }
     }
 
+    /**
+     *
+     * @param str
+     * @return
+     */
     public static String dateStr(String str)
     {
         String str1 = str.substring(0,2);
@@ -35,20 +51,26 @@ public class KLiLib {
         return str2 + "-" + str1 + "-" + str3;
     }
 
-    public static String sumUpTo(int range)
+    /**
+     *
+     * @param range
+     * @return
+     */
+    public static Integer sumUpTo(int range)
     {
-        if(range < 0)
-            return "false";
-        else {
-            int sumOfNumbers = 0;
-            for (int i = 0; i <= range; i++) {
-                sumOfNumbers += i;
-            }
-            String stringOfNum = Integer.toString(sumOfNumbers);
-            return stringOfNum;
+        int sumOfNumbers = 0;
+        for (int i = 0; i <= range; i++)
+        {
+            sumOfNumbers += i;
         }
+        return sumOfNumbers;
     }
 
+    /**
+     *
+     * @param base
+     * @param range
+     */
     public static void multiplicationTable(int base, int range)
     {
 
@@ -59,5 +81,24 @@ public class KLiLib {
             println(numberString);
         }
 
+    }
+
+    public static String quadSolver(double a, double b, double c)
+    {
+        double rootOne, rootTwo, discriminant;
+        discriminant = (b * b - 4 * a * c);
+        if (discriminant < 0)
+        {
+            return "Roots are Imaginary!";
+        }
+        else if (discriminant > 0)
+        {
+            rootOne = (-b + Math.sqrt(discriminant))/(2 * a);
+            rootTwo = (-b - Math.sqrt(discriminant))/(2 * a);
+        }
+        else
+        {
+            rootOne = (-b + Math.sqrt(discriminant))/(2 * a);
+        }
     }
 }
