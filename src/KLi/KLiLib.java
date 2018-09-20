@@ -1,3 +1,5 @@
+//Kent Li, 9/20/2018
+
 package KLi;
 
 public class KLiLib {
@@ -45,5 +47,17 @@ public class KLiLib {
             String stringOfNum = Integer.toString(sumOfNumbers);
             return stringOfNum;
         }
+    }
+
+    public static void multiplicationTable(int base, int range)
+    {
+
+        for(int i = 0; i <= range; i++)
+        {
+            int numbers = base * i;
+            String numberString = String.valueOf(numbers);
+            println(numberString);
+        }
+
     }
 }

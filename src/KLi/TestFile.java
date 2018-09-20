@@ -1,3 +1,5 @@
+//Kent Li, 9/20/2018
+
 package KLi;
 
 import static KLi.KLiLib.*;
@@ -6,7 +8,7 @@ public class TestFile {
 
     public static void main(String[] args)
     {
-        //Test
+        //Test line
         println("I love a cup of Java in the morning.");
 
         //Testing palindrome if it's correct
@@ -23,6 +25,9 @@ public class TestFile {
 
         //Testing if range is negative
         println(sumUpTo(-10));
+
+        //Testing multiplication table
+        multiplicationTable(2,10);
     }
 
 }
