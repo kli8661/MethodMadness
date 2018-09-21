@@ -16,7 +16,7 @@ public class KLiLib {
     public static void println(int str) { System.out.println(str); }
 
     /**
-     *
+     * Checks if an imputed string is a palindrome.
      * @param str
      * @return
      */
@@ -39,7 +39,7 @@ public class KLiLib {
     }
 
     /**
-     *
+     * Changes MM/DD/YYYY format to DD-MM-YYYY format.
      * @param str
      * @return
      */
@@ -52,7 +52,7 @@ public class KLiLib {
     }
 
     /**
-     *
+     * Given range, add numbers up to that range, 1 + 2 + 3... etc.
      * @param range
      * @return
      */
@@ -67,7 +67,7 @@ public class KLiLib {
     }
 
     /**
-     *
+     * Outputs a multiplication table for a number and up to a certain range.
      * @param base
      * @param range
      */
@@ -83,7 +83,7 @@ public class KLiLib {
     }
 
     /**
-     *
+     * Solves quadratic formulas (has to be in ax^2 + bx + c format).
      * @param a
      * @param b
      * @param c

@@ -33,6 +33,6 @@ public class TestFile {
         println(quadSolver(1,0,4));
 
         //Testing Quadratic for two distinct roots
-        println(quadSolver(1.0,-8.0,15.0));
+        println(quadSolver(-1.0,-8.0,15.0));
     }
 }
