@@ -83,9 +83,18 @@ public class KLiLib {
 
     }
 
+    /**
+     * 
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     */
     public static String quadSolver(double a, double b, double c)
     {
         double rootOne, rootTwo, discriminant;
+        String rt1 = "";
+        String rt2 = "";
         discriminant = (b * b - 4 * a * c);
         if (discriminant < 0)
         {
@@ -95,10 +104,15 @@ public class KLiLib {
         {
             rootOne = (-b + Math.sqrt(discriminant))/(2 * a);
             rootTwo = (-b - Math.sqrt(discriminant))/(2 * a);
+            rt1 = Double.toString(rootOne);
+            rt2 = Double.toString(rootTwo);
+            return "Your roots are: " + rt1 + ", " + rt2;
         }
         else
         {
             rootOne = (-b + Math.sqrt(discriminant))/(2 * a);
+            rt1 = Double.toString(rootOne);
+            return "Your root is " + rt1;
         }
     }
 }

@@ -26,8 +26,14 @@ public class TestFile {
         //Testing multiplication table
         multiplicationTable(2,10);
 
-        //Testing Quadratic
-        quadSolver(2,-10,2);
+        //Testing Quadratic for single root
+        println(quadSolver(1,6,9));
+
+        //Testing Quadratic for imaginary roots
+        println(quadSolver(1,0,4));
+
+        //Testing Quadratic for two distinct roots
+        println(quadSolver(1,-8,15));
     }
 
 }
